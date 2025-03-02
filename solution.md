@@ -54,4 +54,11 @@ After adding the path, check if FFmpeg is working by running:
 ```bash
 ffmpeg -version
 ```
+
+or
+
+```bash
+:/path/to/ffmpeg/bin -version
+```
+
 If the version information appears, FFmpeg is correctly installed!
