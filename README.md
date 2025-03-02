@@ -1,31 +1,31 @@
 # FFmpeg-Subprocess-Fix
 
-This document details the solution for the FFmpeg subprocess issue encountered when executing `ffmpeg` using Python's `subprocess` module. The error typically indicates that `ffmpeg` is either not installed or not accessible via the system's PATH.
+This document details the solution for the FFmpeg subprocess issue occurs when executing `ffmpeg` using Python's `subprocess` library. The error typically indicates that `ffmpeg` is either not installed or not accessible on the system's PATH.
 
 ## Table of Contents
 - [Issue Overview](#issue-overview)
-- [Root Cause](#root-cause)
+- [Main Cause](#main-cause)
 - [Solution](#solution)
 - [Usage Instructions](#usage-instructions)
 - [Code Example](#code-example)
-- [Summary](#summary)
+- [Repository structure](#repository-structure)
 
 ## Issue Overview
-When attempting to run `ffmpeg` with the `subprocess` module, errors such as the following may appear:
+When trying to run `ffmpeg` with the `subprocess` library, There are errors such as the following may appear:
 
-FileNotFoundError: [WinError 2] The system cannot find the file specified
+`FileNotFoundError: [WinError 2] The system cannot find the file specified`
 
 or
 
-OSError: [Errno 2] No such file or directory: 'ffmpeg'
+`OSError: [Errno 2] No such file or directory: 'ffmpeg'`
 
 
-These errors occur because the system cannot locate the `ffmpeg` executable.
+These errors occur because the system cannot find and locate the `ffmpeg` EXE file.
 
-## Root Cause
+## Main Cause
 - **Installation Issue**: `ffmpeg` is not installed.
-- **PATH Issue**: `ffmpeg` is not added to the system's PATH.
-- **Incorrect Command**: The command or its path is not correctly specified in the script.
+- **PATH Issue**: `ffmpeg` is not added to the system's PATH environment.
+- **Incorrect Command**: The command or it's path is not correctly specified in the script.
 
 ## Solution
 1. **Install `ffmpeg`**:  
@@ -40,7 +40,7 @@ These errors occur because the system cannot locate the `ffmpeg` executable.
      ```
 
 3. **Use the Absolute Path in Your Script**:  
-   - If you cannot update the PATH, modify your script to use the full path to the `ffmpeg` executable.
+   - If you cannot update the PATH, modify your script to use the full path to the `ffmpeg` EXE file.
 
 ## Usage Instructions
 - **Verify Installation**: Run `ffmpeg -version` in your terminal or command prompt to confirm `ffmpeg` is installed.
