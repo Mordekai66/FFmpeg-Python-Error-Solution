@@ -45,7 +45,7 @@ export PATH=$PATH:/path/to/ffmpeg/bin
 
 ## Alternative Method:
 Use the Full Path Instead of Modifying System PATH.
-If you don't want to modify your system's environment variables, you can use the full path to **ffmpeg.exe** directly in your code. You can find **ffmpeg.exe** file in **bin** folder
+If you don't want to modify your system's environment variables, you can use the full path to `ffmpeg.exe` directly in your code. You can find `ffmpeg.exe` file in `bin` folder
 
 ---
 
