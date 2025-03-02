@@ -39,8 +39,8 @@ These errors occur because the system cannot find and locate the `ffmpeg` EXE fi
      export PATH=$PATH:/path/to/ffmpeg/bin
      ```
 
-3. **Use the Absolute Path in Your Script**:  
-   - If you cannot update the PATH, modify your script to use the full path to the `ffmpeg` EXE file.
+3. **Use the Absolute Path in Your code**:  
+   - If you cannot update the PATH, you can use the full path to the `ffmpeg` EXE file.
 
 ## Usage Instructions
 - **Verify Installation**: Run `ffmpeg -version` in your terminal or command prompt to confirm `ffmpeg` is installed.
@@ -53,7 +53,7 @@ These errors occur because the system cannot find and locate the `ffmpeg` EXE fi
     else:
         print("ffmpeg found, proceeding...")
     ```
-- **Modify Your Script**:  
+- **Modify Your Code**:  
   - Either rely on the system PATH or use the absolute path to call `ffmpeg` via `subprocess`.
 
 ## Code Example
