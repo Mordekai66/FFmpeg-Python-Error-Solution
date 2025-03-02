@@ -1,6 +1,5 @@
 # FFmpeg-Subprocess-Fix
 
-## Overview
 This document details the solution for the FFmpeg subprocess issue encountered when executing `ffmpeg` using Python's `subprocess` module. The error typically indicates that `ffmpeg` is either not installed or not accessible via the system's PATH.
 
 ## Table of Contents
